@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    background-image: url("http://getwallpapers.com/wallpaper/full/c/9/f/260866.jpg");
+    background-size: cover;
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: "Mate SC", sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top:-10rem;
+}
+
+.countdown-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.bigtext{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin:0 2rem;
+}
+
+.countdown-span{
+    text-align: center;
+}
+
+.countdown-span span{
+    font-size: 1.5rem;
+}
+
+.s{
+    font-weight:bold;
+}
