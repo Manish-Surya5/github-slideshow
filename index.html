@@ -1,13 +1,34 @@
----
-layout: presentation
----
-
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>happy diwali</h1>
+    <div class="countdown-container">
+        <div class="countdown-span days-C">
+            <p class="bigtext" id="days">0 :</p>
+            <span class="s">days</span>
+        </div>
+        <div class="countdown-span hours-C">
+            <p class="bigtext" id="hours">0 :</p>
+            <span class="s">hours</span>
+        </div>
+        <div class="countdown-span minutes-C">
+            <p class="bigtext" id="minutes">0 :</p>
+            <span class="s">minutes</span>
+        </div>
+        <div class="countdown-span seconds-C">
+            <p class="bigtext" id="seconds">0</p>
+            <span class="s">seconds</span>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
